@@ -33,7 +33,7 @@ const App = () => {
 
   const [debouncedSearchTerm] = useDebounce('');
 
-  useDebounce(() => setDeboumcedSearchTerm(searchTerm), 1000, [searchTerm]);
+  useDebounce(() => setDebouncedSearchTerm(searchTerm), 1000, [searchTerm]);
 
   const fetchMovies = async (query= '') => {
     setIsLoading(true);
